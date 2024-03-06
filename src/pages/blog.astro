@@ -1,10 +1,10 @@
 ---
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
 import '../styles/global.css'
 ---
 
-<a href="/">Home</a>
-<a href="/about">About me</a>
-<a href="/blog">Blog</a>
+<Header />
 
 <h1>Welcome to my life</h1>
 
@@ -13,3 +13,9 @@ import '../styles/global.css'
     <li><a href="/posts/2">My Family</a></li>
     <li><a href="/posts/3">My Friends</a></li>
 </ul>
+
+<Footer />
+
+<script>
+    import '../scripts/menu'
+</script>
