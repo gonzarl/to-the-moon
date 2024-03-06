@@ -1,13 +1,30 @@
-<a href="/">Home</a>
-<a href="/about">About me</a>
-<a href="/blog">Blog</a>
+---
+import '../styles/global.css'
+const pageTitle = "About Me";
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle}</title>
+	</head>
+	<body>
+
+        <a href="/">Home</a>
+        <a href="/about">About me</a>
+        <a href="/blog">Blog</a>
 
 
-<h1>About me</h1>
-<h2>... and my new Astro Journey !! 🚀🚀</h2>
+        <h1>{pageTitle}</h1>
+        <h2>... and my new Astro Journey !! 🚀🚀</h2>
 
-<p>Welcome to my corner of the Internet! I'm a passionate fullstack developer living in Argentina. </p>
-<p>My fascionation with technology started when I was young and ignited my journey into the world of software development, where I've honed my skills in both front-end and back-end development. From designing sleek user interfaces to architecting backend systems, I thrive on the challenges that come with building innovative solutions.</p>
-<p>Beyond my technical pursuits, I'm on the cusp of completing my degree in Systems Engineering. This academic jouney has provided me with a solid foundation in problem-solving, critical thinking, and project-management skils that I bring to every aspect of my work.</p>
-<p>When I'm not immersed coding, you'll likely find me hanging out with friends or watching a movie.</p>
-<p>Join me on this journey of exploration and discovery that we all call life!!</p>
+        <p>Welcome to my corner of the Internet! I'm a passionate fullstack developer living in Argentina. </p>
+        <p>My fascionation with technology started when I was young and ignited my journey into the world of software development, where I've honed my skills in both front-end and back-end development. From designing sleek user interfaces to architecting backend systems, I thrive on the challenges that come with building innovative solutions.</p>
+        <p>Beyond my technical pursuits, I'm on the cusp of completing my degree in Systems Engineering. This academic jouney has provided me with a solid foundation in problem-solving, critical thinking, and project-management skils that I bring to every aspect of my work.</p>
+        <p>When I'm not immersed coding, you'll likely find me hanging out with friends or watching a movie.</p>
+        <p>Join me on this journey of exploration and discovery that we all call life!!</p>
+
+    </body>
+</html>
