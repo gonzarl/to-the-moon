@@ -38,12 +38,11 @@ h1 {
     top: 5rem;
     left: 48px;
     background-color: #ff9776;
-    display: none;
-    margin: 0;
+    display: flex;
+    justify-content: center;
   }
   
   .nav-links a {
-    display: block;
     text-align: center;
     padding: 10px 0;
     text-decoration: none;
@@ -80,3 +79,28 @@ h1 {
     }
   
   }
+
+.post-image {
+  text-align: center;
+}
+
+a {
+  color: #00539F;
+  text-decoration: none;
+}
+
+.tags{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.tag{
+  margin: 0.25em;
+  border: dotted 1px #a1a1a1;
+  border-radius: .5em;
+  padding: .5em 1em;
+  font-size: 1.15em;
+  background-color: #f8fcfd;
+}
