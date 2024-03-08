@@ -1,7 +1,9 @@
 ---
+import Greeting from '../components/Greeting';
 import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = 'Home Page';
 ---
 <BaseLayout pageTitle={pageTitle}>
 	<h2>To the fokin moon !!</h2>
+	<Greeting client:load messages={["Shibari", "Bonding", "Dominatrix"]} />
 </BaseLayout>
