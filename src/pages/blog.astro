@@ -1,21 +1,12 @@
 ---
-import Header from '../components/Header.astro'
-import Footer from '../components/Footer.astro'
-import '../styles/global.css'
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = 'Blog';
 ---
-
-<Header />
-
-<h1>Welcome to my life</h1>
-
-<ul>
-    <li><a href="/posts/1">My First Post</a></li>
-    <li><a href="/posts/2">My Family</a></li>
-    <li><a href="/posts/3">My Friends</a></li>
-</ul>
-
-<Footer />
-
-<script>
-    import '../scripts/menu'
-</script>
+<BaseLayout pageTitle={pageTitle}>
+	<h1>Welcome to my life</h1>
+    <ul>
+        <li><a href="/posts/1">My First Post</a></li>
+        <li><a href="/posts/2">My Family</a></li>
+        <li><a href="/posts/3">My Friends</a></li>
+    </ul>
+</BaseLayout>
